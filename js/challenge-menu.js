@@ -67,6 +67,7 @@ function chMenuShowFiles() {
 		var num = nums[k].num;
 		var data = nums[k].data;
 		var mdata = MAPDATA[data.event.world];
+		if (mdata === undefined) return;
 		var tr = $('#chfile'+num);
 		if (tr.length <= 0) {
 			tr = $('<tr id="chfile'+num+'" class="chfile" onclick="chMenuLoadFile('+num+')"></tr>');

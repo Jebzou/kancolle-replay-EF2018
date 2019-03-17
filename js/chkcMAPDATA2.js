@@ -27482,7 +27482,10 @@ var MAPDATA = {
 						x: 393,
 						y: 303,
 						compDiff: {
-							
+							3: ['Hard 1','Hard 2','Hard 3', 'Hard 4'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2','Casual 3'],
 						},
 						route: 'I'
 					},
@@ -27491,13 +27494,22 @@ var MAPDATA = {
 						x: 480,
 						y: 254,
 						compDiff: {
-							
+							3: ['Hard 1','Hard 2','Hard 3'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2','Casual 3'],
 						},
+						routeC: function(ships) {
+							if(ships.total <= 5 || ships.DE >= 3) return 'F';
+							return (Math.random() < .3)? 'E' : 'F';
+						}
 					},
 					'H': {
 						type: 4,
 						x: 563,
 						y: 209,
+						ressource: 1,
+						route: 'G'
 					},
 					'I': {
 						type: 1,

@@ -27518,7 +27518,10 @@ var MAPDATA = {
 						x: 553,
 						y: 318,
 						compDiff: {
-							
+							3: ['Hard 1','Hard 2','Hard F'],
+							2: ['Medium 1','Medium 2','Medium F'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy F'],
+							4: ['Casual 1','Casual 2','Casual F'],
 						},
 					},
 				}

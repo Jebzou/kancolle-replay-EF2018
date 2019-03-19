@@ -27531,6 +27531,247 @@ var MAPDATA = {
 						},
 					},
 				}
+			},
+			2: {
+				name: 'E-2',
+				nameT: 'Operation "Reclaim the Strait"',
+				fleetTypes: [0],
+				bgmMap: 119,
+				bgmDN: 120,
+				bgmNN: 120,
+				bgmDB: 121,
+				bgmNB: 121,
+				bossnode: [9, 15],
+				checkLock: [5,2,3,7,8],
+				giveLock: 4,
+				lbas: 1,
+				hiddenRoutes: {
+					1: {
+						images: [{ name: '2_1.png', x: 0, y: 0 }],
+						unlock: function() {
+							return CHDATA.event.maps[2].part >= 2; 
+						}
+					},
+				},
+				parts: {
+					1: {
+						currentBoss: 'I',
+						maphp: {
+							3: { 1: 300 },
+							2: { 1: 210 },
+							1: { 1: 200 },
+							4: { 1: 200 },
+						},
+						transport: 'G',
+					},
+					2: {
+						currentBoss: 'O',
+						maphp: {
+							3: { 1: 3000 },
+							2: { 1: 2600 },
+							1: { 1: 2300 },
+							4: { 1: 2300 },
+						},
+						finalhp: {
+							3: 720,
+							2: 720,
+							1: 720,
+							4: 720,
+						},
+					}
+				},
+				startCheck: function() {
+					if(CHDATA.event.maps[2].part >= 2) return "Start2";
+					return 'Start1';
+				},
+				nodes: {
+					'Start1': {
+						type: 3,
+						x: 709,
+						y: 332,
+						route: 'A'
+					},
+					'Start2': {
+						type: 3,
+						x: 425,
+						y: 208,
+						route: 'L'
+					},
+					'A': {
+						type: 3,
+						x: 551,
+						y: 330,
+						distance: 3,
+						routeC: function(ships) {
+							if(ships.DE + ships.DD < 2) return 'B'; 
+							if(ships.FBB + ships.CVL > 2) return 'B'; 
+							if(ships.BB || ships.BBV || ships.CV || ships.CVB) return 'B';
+							return 'C';
+						}
+					},
+					'B': {
+						type: 1,
+						x: 503,
+						y: 345,
+						distance: 3,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+						route: 'D'
+					},
+					'C': {
+						type: 1,
+						x: 455,
+						y: 269,
+						distance: 1,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+						route: 'D'
+					},
+					'D': {
+						type: 1,
+						x: 382,
+						y: 288,
+						distance: 2,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4'],
+							4: ['Casual 1','Casual 2','Casual 3','Casual 4'],
+						},
+						routeC: function(ships){
+							if(CHDATA.event.maps[2].part === 1) {
+								this.showNoCompass = true;
+								return 'F';
+							}
+							if(ships.DD + ships.CL < 2) return 'J';			
+							if(ships.CV + ships.CVB > 1) return 'J';
+							if(ships.BBV && (ships.CT + ships.CLT + ships.CA + ships.CAV + ships.FBB + 
+									ships.BB + ships.BBV + ships.CV + ships.CVL + ships.CVB) > 3) return 'J';
+							if(ships.FBB + ships.BB + ships.BBV + ships.CV + ships.CVL + ships.CVB > 3) return 'J';
+							return 'F';
+						}
+					},
+					'E': {
+						type: 1,
+						x: 280,
+						y: 193,
+						raid: true,
+						distance: 3,
+						get end(){
+							return CHDATA.event.maps[2].part === 1;
+						},
+						compDiff: {
+							3: ['Hard 1','Hard 2'],
+							2: ['Medium 1','Medium 2'],
+							1: ['Easy 1','Easy 2'],
+							4: ['Casual 1','Casual 2'],
+						},
+						compDiffF: {
+							3: ['Hard 3'],
+							2: ['Medium 3'],
+							1: ['Easy 3'],
+							4: ['Casual 3'],
+						},
+					},
+					'F': {
+						type: 3,
+						x: 277,
+						y: 241,
+						distance: 3,
+						routeS: ['E', 'G']
+					},
+					'G': {
+						type: 2,
+						x: 269,
+						y: 341,
+						resource: 0,
+						distance: 4,
+						routeL: { 13: 'I', 10.5: 'H' }
+					},
+					'H': {
+						type: 3,
+						x: 222,
+						y: 245,
+						distance: 4,
+						end: true
+					},
+					'I': {
+						type: 1,
+						x: 144,
+						y: 265,
+						end: true,
+						boss: true,
+						distance: 5,
+						compDiff: {
+							3: ['Hard 1','Hard 2'],
+							2: ['Medium 1','Medium 2'],
+							1: ['Easy 1','Easy 2'],
+							4: ['Casual 1','Casual 2'],
+						},
+						compDiffF: {
+							3: ['Hard 3'],
+							2: ['Medium 3'],
+							1: ['Easy 3'],
+							4: ['Casual 3'],
+						},
+					},
+					'J': {
+						type: 1,
+						x: 352,
+						y: 199,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+					},
+					'K': {
+						type: 3,
+						x: 207,
+						y: 196,
+					},
+					'L': {
+						type: 3,
+						x: 154,
+						y: 80,
+					},
+					'M': {
+						type: 1,
+						x: 136,
+						y: 133,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+					},
+					'N': {
+						type: 1,
+						x: 112,
+						y: 209,
+						compDiff: {
+							
+						},
+					},
+					'O': {
+						type: 1,
+						x: 246,
+						y: 138,
+						compDiff: {
+							
+						},
+					},
+				}
 			}
 		}
 	},

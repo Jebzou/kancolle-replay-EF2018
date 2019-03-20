@@ -2450,6 +2450,7 @@ var VOICES = {
 		damage1: "assets/voice/Naganami-Minor_Damage_1.ogg",
 		damage2: "assets/voice/Naganami-Minor_Damage_2.ogg",
 		damage3: "assets/voice/Naganami-Major_Damage.ogg",
+		friend142: "assets/voice/NaganamiKai2-Friend_Fleet_1.mp3",
 	},
 	137: {
 		start: "assets/voice/Agano-Battle_Start.ogg",
@@ -3348,6 +3349,8 @@ var VOICES = {
 		damage1: "assets/voice/Okinami-Minor_Damage_1.ogg",
 		damage2: "assets/voice/Okinami-Minor_Damage_2.ogg",
 		damage3: "assets/voice/Okinami-Major_Damage.ogg",
+		friend142: "assets/voice/OkinamiKai-Friend_Fleet_1.mp3",
+		friend242: "assets/voice/OkinamiKai-Friend_Fleet_2.mp3",
 	},
 	453: {
 		start: "assets/voice/Kazagumo-Battle_Start.ogg",
@@ -3686,7 +3689,8 @@ var VOICES = {
 		nbattack: "assets/voice/Asakaze-Night_Attack.ogg",
 		damage1: "assets/voice/Asakaze-Minor_Damage_1.ogg",
 		damage2: "assets/voice/Asakaze-Minor_Damage_2.ogg",
-		damage3: "assets/voice/Asakaze-Major_Damage.ogg"
+		damage3: "assets/voice/Asakaze-Major_Damage.ogg",
+		friend142: "assets/voice/AsakazeKai-Friend_Fleet_1.mp3",
 	},
 	474: {
 		start: "assets/voice/Matsukaze-Battle_Start.ogg",
@@ -4083,6 +4087,7 @@ var VOICES = {
         damage1: "assets/voice/Gambier_Bay-Minor_Damage_1.ogg",
         damage2: "assets/voice/Gambier_Bay-Minor_Damage_2.ogg",
         damage3: "assets/voice/Gambier_Bay-Major_Damage.ogg",
+        friend142: "assets/voice/GambierBayKai-Friend_Fleet_1.mp3",
 	},
     549:{
         start: "assets/voice/Intrepid-Battle_Start.ogg",
@@ -4099,6 +4104,7 @@ var VOICES = {
         damage1: "assets/voice/Intrepid-Minor_Damage_1.ogg",
         damage2: "assets/voice/Intrepid-Minor_Damage_2.ogg",
         damage3: "assets/voice/Intrepid-Major_Damage.ogg",
+        friend142: "assets/voice/IntrepidKai-Friend_Fleet_1.mp3",
 	},
     551:{
         start: "assets/voice/Hiburi-Battle_Start.ogg",

@@ -27333,46 +27333,40 @@ var MAPDATA = {
 		bannerImgAlt: 'assets/maps/42/banner2.png',
 		transportCalc: transportCalcStandard,
 		historical: {
-			/*kurita: [
-				131,143,80,78,79,
-				66,67,68,69,62,65,71,72,124,125,
-				138,139,
-				50,135,409,410,452,20,415,167,168,169,41
-			],
-			troopTransport: [61,113,486],
-			shimaEscort: [38,40,41],
-			ozawa: [111, 102,103,116, 77,87, 22,100,183, 421,423],
-			nishimura: [26,27,70,43,97,413,414],
-			ormoc: [63,64,113,15,16,49,38,40,41,486,50,135,425,452,517],
-			leyteOther: [110,114],*/
+			nagumo: [93,111,91,110,90, 78,79,86,85, 71,72, 114, 48,132,167,168,169,170,17,18,49],
+			ozawa: [76,125,124, 69, 23, 479,9,32,33,10],
 		},
 		friendFleet: {
-			/*'desdiv19': { voice: [195,141], ships: [
-				{ mid: 195, LVL: 77, FP: 53, TP: 49, AA: 28, AR: 28, equips: [63,63,74] },
-				{ mid: 208, LVL: 74, FP: 35, TP: 59, AA: 36, AR: 35, equips: [63,63,101] },
-				{ mid: 368, LVL: 71, FP: 23, TP: 58, AA: 27, AR: 34, equips: [2,125,28] },
-				{ mid: 206, LVL: 70, FP: 23, TP: 57, AA: 25, AR: 24, equips: [2,125,28] },
+			'desdiv31': { voice: [543,142], ships: [
+				{ mid: 543, LVL: 84, FP: 69, TP: 89, AA: 64, AR: 53, equips: [267,15,240] },
+				{ mid: 345, LVL: 80, FP: 51, TP: 80, AA: 50, AR: 49, equips: [267,15,88] },
+				{ mid: 359, LVL: 78, FP: 50, TP: 81, AA: 50, AR: 49, equips: [267,15,88] },
 			] },
-			'desdiv19B': { voice: [208,241], ships: [
-				{ mid: 208, LVL: 74, FP: 35, TP: 59, AA: 36, AR: 35, equips: [63,63,101] },
-				{ mid: 195, LVL: 77, FP: 53, TP: 49, AA: 28, AR: 28, equips: [63,63,125] },
-				{ mid: 368, LVL: 71, FP: 23, TP: 58, AA: 27, AR: 34, equips: [2,125,28] },
-				{ mid: 206, LVL: 70, FP: 23, TP: 57, AA: 25, AR: 24, equips: [125,125,125] },
+			'USfleet1': { voice: [397,142], ships: [
+				{ mid: 397, LVL: 67, FP: 51, TP: 0, AA: 95, AR: 90, equips: [255,257,256,258] },
+				{ mid: 545, LVL: 86, FP: 68, TP: 0, AA: 94, AR: 85, equips: [254,257,257,256] },
+				{ mid: 396, LVL: 82, FP: 32, TP: 0, AA: 48, AR: 39, equips: [277,257,258] },
+				{ mid: 681, LVL: 88, FP: 50, TP: 70, AA: 60, AR: 43, equips: [284,284] },
 			] },
-			'crudiv4': { voice: [427,141], ships: [
-				{ mid: 269, LVL: 84, FP: 70, TP: 61, AA: 58, AR: 72, equips: [6,6,15,101], damage: [.65,.75] },
-				{ mid: 270, LVL: 84, FP: 75, TP: 68, AA: 57, AR: 68, equips: [6,6,15,88], damage: [.44,.54] },
-				{ mid: 427, LVL: 83, FP: 63, TP: 53, AA: 55, AR: 68, equips: [50,50,15,129] },
-				{ mid: 428, LVL: 82, FP: 66, TP: 68, AA: 95, AR: 58, equips: [50,50,130,131], damage: [.5,.6] },
+			'USfleet2': { voice: [396,142], ships: [
+				{ mid: 545, LVL: 86, FP: 68, TP: 0, AA: 94, AR: 85, equips: [254,257,257,256] },
+				{ mid: 396, LVL: 82, FP: 32, TP: 0, AA: 48, AR: 39, equips: [277,257,258] },
+				{ mid: 681, LVL: 88, FP: 50, TP: 70, AA: 60, AR: 43, equips: [284,284] },
 			] },
-			'crudiv4B': { voice: [427,141], ships: [
-				{ mid: 269, LVL: 84, FP: 70, TP: 61, AA: 58, AR: 72, equips: [6,6,15,101], damage: [.7,.8] },
-				{ mid: 270, LVL: 84, FP: 75, TP: 68, AA: 57, AR: 68, equips: [6,6,15,88], damage: [.7,.8] },
-				{ mid: 427, LVL: 83, FP: 63, TP: 53, AA: 55, AR: 68, equips: [50,50,15,129], damage: [.9,1] },
-				{ mid: 428, LVL: 82, FP: 66, TP: 68, AA: 95, AR: 58, equips: [50,50,130,131], damage: [.7,.8] },
-			] },*/
+			'unassorted1': { voice: [370,142], ships: [
+				{ mid: 370, LVL: 89, FP: 42, TP: 69, AA: 52, AR: 37, equips: [293,174,88], },
+				{ mid: 363, LVL: 88, FP: 38, TP: 68, AA: 56, AR: 38, equips: [293,174,88], },
+				{ mid: 371, LVL: 87, FP: 39, TP: 63, AA: 43, AR: 35, equips: [293,174,88], },
+				{ mid: 387, LVL: 86, FP: 38, TP: 52, AA: 38, AR: 35, equips: [174,174,174], },
+			] },
+			'unassorted2': { voice: [396,142], ships: [
+				{ mid: 396, LVL: 82, FP: 32, TP: 0, AA: 48, AR: 39, equips: [277,257,258] },
+				{ mid: 681, LVL: 88, FP: 50, TP: 70, AA: 60, AR: 43, equips: [284,284] },
+				{ mid: 371, LVL: 87, FP: 39, TP: 63, AA: 43, AR: 35, equips: [293,174,88], },
+				{ mid: 387, LVL: 86, FP: 38, TP: 52, AA: 38, AR: 35, equips: [174,174,174], },
+			] },
 		},
-		//disableMore: { ships: [551,544,549] },
+		disableMore: { ships: [534,527] },
 		maps: {
 			1: {
 				name: 'E-1',
@@ -27514,6 +27508,7 @@ var MAPDATA = {
 					'I': {
 						type: 1,
 						boss: true,
+						subonly: true,
 						end: true,
 						x: 553,
 						y: 318,
@@ -27595,7 +27590,7 @@ var MAPDATA = {
 						type: 3,
 						x: 425,
 						y: 208,
-						route: 'L'
+						route: 'D'
 					},
 					'A': {
 						type: 3,
@@ -27668,6 +27663,7 @@ var MAPDATA = {
 						get end(){
 							return CHDATA.event.maps[2].part === 1;
 						},
+						route: 'K',
 						compDiff: {
 							3: ['Hard 1','Hard 2'],
 							2: ['Medium 1','Medium 2'],
@@ -27727,6 +27723,10 @@ var MAPDATA = {
 						type: 1,
 						x: 352,
 						y: 199,
+						subonly: true,
+						route: 'E',
+						distance: 2,
+						hidden: 1,
 						compDiff: {
 							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
 							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
@@ -27738,9 +27738,20 @@ var MAPDATA = {
 						type: 3,
 						x: 207,
 						y: 196,
+						distance: 4,
+						hidden: 1,
+						routeC: function(ships) {
+							if(ships.DD < 2) return 'N';
+							if(ships.FBB + ships.BB + ships.BBV + ships.CV + ships.CVB > 2) return 'N';
+							if(ships.FBB + ships.BB + ships.BBV + ships.CV + ships.CVB + ships.CVL + ships.CLT + ships.CA > 3) return 'N';
+							return 'M';
+						}
 					},
 					'L': {
 						type: 3,
+						end: true,
+						distance: 5,
+						hidden: 1,
 						x: 154,
 						y: 80,
 					},
@@ -27748,6 +27759,9 @@ var MAPDATA = {
 						type: 1,
 						x: 136,
 						y: 133,
+						routeL: {0: 'L', 3: 'O'},
+						distance: 5,
+						hidden: 1,
 						compDiff: {
 							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
 							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
@@ -27759,18 +27773,587 @@ var MAPDATA = {
 						type: 1,
 						x: 112,
 						y: 209,
+						subonly: true,
+						route: 'M',
+						distance: 5,
+						hidden: 1,
 						compDiff: {
-							
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
 						},
 					},
 					'O': {
 						type: 1,
 						x: 246,
 						y: 138,
+						boss: true,
+						end: true,
+						distance: 4,
+						hidden: 1,
 						compDiff: {
-							
+							3: ['Hard 1','Hard 2'],
+							2: ['Medium 1','Medium 2'],
+							1: ['Easy 1'],
+							4: ['Casual 1'],
+						},
+						compDiffF: {
+							3: ['Hard 3'],
+							2: ['Medium 3'],
+							1: ['Easy 2'],
+							4: ['Casual 2'],
 						},
 					},
+				}
+			},
+			3: {
+				name: 'E-3',
+				nameT: 'Strike the Enemy\'s Western Frontline Anchorage!',
+				fleetTypes: [0,1,2,3],
+				bgmMap: 119,
+				bgmDN: 120,
+				bgmNN: 120,
+				bgmDB: 123,
+				bgmNB: 123,
+				bossnode: [13,17],
+				checkLock: [5,4,3,7,8],
+				giveLock: 2,
+				lbas: 2,
+				reward: { ships: [534] },
+				hiddenRoutes: {
+					1: {
+						images: [{ name: '3_1.png', x: 0, y: 0 }],
+						unlock: function() {
+							return CHDATA.event.maps[3].part >= 2; 
+						}
+					},
+				},
+				parts: {
+					1: {
+						currentBoss: 'M',
+						maphp: {
+							3: { 1: 2000 },
+							2: { 1: 1800 },
+							1: { 1: 1700 },
+							4: { 1: 1700 },
+						},
+						finalhp: {
+							3: 700,
+							2: 600,
+							1: 500,
+							4: 500,
+						},
+					},
+					2: {
+						currentBoss: 'Q',
+						maphp: {
+							3: { 1: 1500 },
+							2: { 1: 1400 },
+							1: { 1: 1300 },
+							4: { 1: 1300 },
+						},
+						finalhp: {
+							3: 490,
+							2: 490,
+							1: 490,
+							4: 490,
+						},
+					},
+					3: {
+						currentBoss: 'Q',
+						maphp: {
+							3: { 1: 1400 },
+							2: { 1: 1350 },
+							1: { 1: 1300 },
+							4: { 1: 1300 },
+						},
+						finalhp: {
+							3: 570,
+							2: 570,
+							1: 570,
+							4: 570,
+						},
+					}
+				},
+				nodes: {
+					'Start': {
+						type: 3,
+						x: 706,
+						y: 112,
+						route: 'Q'
+					},
+					'A': {
+						type: 3,
+						x: 595,
+						y: 143,
+						distance: 1,
+						routeC: function (ships) {
+							if(ships.aBB + ships.aCV === 4 || ships.aBB + ships.aCV === 6) return 'B';
+							if(!ships.escort) {
+								if(ships.total <= 5 && ships.DD === 4 && !ships.CLT) return 'E';
+								return 'C';
+							}
+							return 'C';
+						}
+					},
+					'B': {
+						type: 1,
+						x: 586,
+						y: 254,
+						distance: 2,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+						routeC: function (ships) {
+							if(!ships.escort) return 'C';
+							if(ships.aBB + ships.aCV === 6) return 'C';
+							return 'D';
+						}
+					},
+					'C': {
+						type: 1,
+						x: 489,
+						y: 173,
+						distance: 3,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+						routeC: function (ships) {
+							if(!ships.escort && ships.DD >= 2) return 'F';
+							if(ships.aBB + ships.aCV <= 3) return 'F';
+							return 'D';
+						}
+					},
+					'D': {
+						type: 1,
+						x: 485,
+						y: 340,
+						distance: 4,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4'],
+							1: ['Easy 1','Easy 2','Easy 3'],
+							4: ['Casual 1','Casual 2'],
+						},
+						route: 'F',
+					},
+					'E': {
+						type: 3,
+						x: 429,
+						y: 119,
+						distance: 4,
+						routeS: ['F','H']
+					},
+					'F': {
+						type: 3,
+						x: 385,
+						y: 250,
+						distance: 5,
+						routeS: ['I','J']
+					},
+					'G': {
+						type: 1,
+						x: 354,
+						y: 181,
+						distance: 5,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4','Hard 5','Hard 6'],
+							2: ['Medium 1','Medium 2','Medium 3'],
+							1: ['Easy 1','Easy 2'],
+							4: ['Casual 1','Casual 2'],
+						},
+						route: 'J',
+					},
+					'H': {
+						type: 1,
+						x: 337,
+						y: 107,
+						distance: 5,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4','Hard 5'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+						routeC: function (ships) {
+							if(ships.SS || ships.SSV) return 'G';
+							return 'J';
+						}
+					},
+					'I': {
+						type: 1,
+						x: 305,
+						y: 308,
+						subonly: true,
+						get end(){
+							return CHDATA.event.maps[3].part === 1;
+						},
+						distance: 6,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4','Hard 5'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2'],
+						},
+						routeC: function (ships) {
+							if(ships.aBB + ships.aCV >= 4) return 'N';
+							return 'O';
+						}
+					},
+					'J': {
+						type: 1,
+						x: 232,
+						y: 178,
+						distance: 7,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4',],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2','Casual 3','Casual 4'],
+						},
+						routeC: function(ships) {
+							if (!ships.escort) {
+								this.showLoSPlane = 'M';
+								return checkELoS33(getELoS33(1,1),{ 0: 'L', 3: 'M' });
+							}
+							this.showLoSPlane = 'K';
+							return checkELoS33(getELoS33(1,1),{ 0: 'L', 3: 'K' });
+						}
+					},
+					'K': {
+						type: 1,
+						x: 194,
+						y: 88,
+						subonly: true,
+						distance: 7,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4','Hard 5'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5','Medium 6'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5','Easy 6'],
+							4: ['Casual 1','Casual 2'],
+						},
+						route: 'M'
+					},
+					'L': {
+						type: 3,
+						x: 132,
+						y: 132,
+						end: true,
+						distance: 8,
+					},
+					'M': {
+						type: 1,
+						x: 284,
+						y: 95,
+						boss: true,
+						end: true,
+						distance: 6,
+						compDiff: {
+							3: ['Hard 1','Hard 2'],
+							2: ['Medium 1'],
+							1: ['Easy 1'],
+							4: ['Casual 1'],
+						},
+						compDiffF: {
+							3: ['Hard 3'],
+							2: ['Medium 2'],
+							1: ['Easy 2'],
+							4: ['Casual 2'],
+						},
+					},
+					'N': {
+						type: 1,
+						x: 253,
+						y: 344,
+						hidden: 1,
+						raid: true,
+						distance: 7,
+						routeC: function (ships) {
+							if(ships.aBB + ships.aCV >= 5) return 'P';
+							return 'O';
+						},
+						get compDiff() {
+							if(CHDATA.event.maps[3].part === 2) 
+								return {
+									3: ['Hard 1'],
+									2: ['Medium 1'],
+									1: ['Easy 1'],
+									4: ['Casual 1'],
+								};
+							return {
+								3: ['Hard 3'],
+								2: ['Medium 3'],
+								1: ['Easy 3'],
+								4: ['Casual 3'],
+							};
+						},
+						get compDiffF() {
+							if(CHDATA.event.maps[3].part === 2) 
+								return {
+									3: ['Hard 2'],
+									2: ['Medium 2'],
+									1: ['Easy 2'],
+									4: ['Casual 2'],
+								};
+							return {
+								3: ['Hard 4'],
+								2: ['Medium 4'],
+								1: ['Easy 4'],
+								4: ['Casual 4'],
+							};
+						},
+					},
+					'O': {
+						type: 1,
+						x: 214,
+						y: 219,
+						hidden: 1,
+						distance: 7,
+						compDiff: {
+							3: ['Hard 1','Hard 2','Hard 3','Hard 4'],
+							2: ['Medium 1','Medium 2','Medium 3','Medium 4','Medium 5'],
+							1: ['Easy 1','Easy 2','Easy 3','Easy 4','Easy 5'],
+							4: ['Casual 1','Casual 2','Casual 3'],
+						},
+						routeL: {0: 'L', 3: 'Q'},
+					},
+					'P': {
+						type: 1,
+						x: 148,
+						y: 286,
+						hidden: 1,
+						raid: true,
+						distance: 8,
+						route: 'O',
+						get compDiff() {
+							if(CHDATA.event.maps[3].part === 2) 
+								return {
+									3: ['Hard 1'],
+									2: ['Medium 1'],
+									1: ['Easy 1'],
+									4: ['Casual 1'],
+								};
+							return {
+								3: ['Hard 3'],
+								2: ['Medium 3'],
+								1: ['Easy 3'],
+								4: ['Casual 3'],
+							};
+						},
+						get compDiffF() {
+							if(CHDATA.event.maps[3].part === 2) 
+								return {
+									3: ['Hard 2'],
+									2: ['Medium 2'],
+									1: ['Easy 2'],
+									4: ['Casual 2'],
+								};
+							return {
+								3: ['Hard 4'],
+								2: ['Medium 4'],
+								1: ['Easy 4'],
+								4: ['Casual 4'],
+							};
+						},
+					},
+					'Q': {
+						type: 1,
+						x: 102,
+						y: 219,
+						hidden: 1,
+						distance: 9,
+						boss: true,
+						end: true,
+						friendFleet: ['desdiv31','USfleet1','USfleet2','unassorted1','unassorted2'],
+						setupSpecial: function() {
+							if(CHDATA.event.maps[3].part < 3) return;
+
+							let ships = FLEETS1[0].ships.concat(FLEETS1[1] ? FLEETS1[1].ships : []);
+							if (CHDATA.sortie.fleetFriend) ships = ships.concat(CHDATA.sortie.fleetFriend.ships);
+
+							let historicals = MAPDATA[42].historical.ozawa.concat(MAPDATA[42].historical.nagumo);
+
+							for (let ship of ships) {
+								let bonuses = [];
+
+								let nbDB = 0;
+								let hasSPFSPB = false;
+								let hasT3shell = false;
+
+								for (let equip of ship.equips) {
+									if (equip.type == DIVEBOMBER) nbDB++;
+									if (equip.type == TYPE3SHELL) hasT3shell = true;
+									if (equip.type == SEAPLANEBOMBER) hasSPFSPB = true;
+									if (equip.type == SEAPLANEFIGHTER) hasSPFSPB = true;
+								}
+
+								if (hasT3shell) bonuses.push({ mod: 1.35, on: [1821,1822,1823,1824,1825,1826] });
+								if (hasSPFSPB) bonuses.push({ mod: 1.3, on: [1821,1822,1823,1824,1825,1826] });
+
+								if(nbDB === 1) bonuses.push({ mod: 1.4, on: [1821,1822,1823,1824,1825,1826] });
+								if(nbDB > 1) bonuses.push({ mod: 2.1, on: [1821,1822,1823,1824,1825,1826] });
+
+								if (historicals.indexOf(getBaseId(ship.mid)) != -1) {
+									bonuses.push({ mod: 1.2, on: [1821,1822,1823,1824,1825,1826] });;
+								}
+
+								if (bonuses.length) {
+									ship.bonusSpecial = bonuses;
+								}
+							}
+						},
+						get compDiff() {
+							if(CHDATA.event.maps[3].part === 2) 
+								return {
+									3: ['Hard 1'],
+									2: ['Medium 1'],
+									1: ['Easy 1'],
+									4: ['Casual 1'],
+								};
+							return {
+								3: ['Hard 3'],
+								2: ['Medium 3'],
+								1: ['Easy 3'],
+								4: ['Casual 3'],
+							};
+						},
+						get compDiffF() {
+							if(CHDATA.event.maps[3].part === 2) 
+								return {
+									3: ['Hard 2'],
+									2: ['Medium 2'],
+									1: ['Easy 2'],
+									4: ['Casual 2'],
+								};
+							return {
+								3: ['Hard 4'],
+								2: ['Medium 4'],
+								1: ['Easy 4'],
+								4: ['Casual 4'],
+							};
+						},
+					}
+				}
+			},
+			4: {
+				name: 'E-4',
+				nameT: 'Not released yet',
+				fleetTypes: [0,1,2,3],
+				bgmMap: 119,
+				bgmDN: 120,
+				bgmNN: 120,
+				bgmDB: 123,
+				bgmNB: 123,
+				bossnode: ['L','U'],
+				checkLock: [5,4,3,7,8],
+				giveLock: 2,
+				lbas: 2,
+				parts: {
+					1: {
+						currentBoss: 'L',
+						maphp: {
+							3: { 1: 400 },
+							2: { 1: 280 },
+							1: { 1: 220 },
+							4: { 1: 220 },
+						},
+						transport: 'K',
+					},
+					2: {
+						currentBoss: 'U',
+						maphp: {
+							3: { 1: 3500 },
+							2: { 1: 3500 },
+							1: { 1: 3500 },
+							4: { 1: 3500 },
+						},
+						finalhp: {
+							3: 700,
+							2: 700,
+							1: 700,
+							4: 700,
+						},
+					}
+				},
+				additionalChecks: function(ships, errors){
+					errors.push('Map not released yet');
+				},
+				nodes: {
+					
+				}
+			},
+			5: {
+				name: 'E-5',
+				nameT: 'Not released yet',
+				fleetTypes: [0,1,2,3],
+				bgmMap: 119,
+				bgmDN: 120,
+				bgmNN: 120,
+				bgmDB: 123,
+				bgmNB: 123,
+				bossnode: ['J','W','Z2'],
+				checkLock: [5,4,3,7,8],
+				giveLock: 2,
+				lbas: 2,
+				parts: {
+					1: {
+						currentBoss: 'J',
+						maphp: {
+							3: { 1: 2120 },
+							2: { 1: 1800 },
+							1: { 1: 1600 },
+							4: { 1: 1600 },
+						},
+						finalhp: {
+							3: 530,
+							2: 450,
+							1: 400,
+							4: 400,
+						},
+					},
+					2: {
+						currentBoss: 'W',
+						maphp: {
+							3: { 1: 3500 },
+							2: { 1: 3080 },
+							1: { 1: 3080 },
+							4: { 1: 3080 },
+						},
+						finalhp: {
+							3: 770,
+							2: 770,
+							1: 770,
+							4: 770,
+						},
+					},
+					3: {
+						currentBoss: 'Z2',
+						maphp: {
+							3: { 1: 4500 },
+							2: { 1: 4500 },
+							1: { 1: 4500 },
+							4: { 1: 4500 },
+						},
+						finalhp: {
+							3: 900,
+							2: 900,
+							1: 900,
+							4: 900,
+						},
+					}
+				},
+				additionalChecks: function(ships, errors){
+					errors.push('Map not released yet');
+				},
+				nodes: {
+					
 				}
 			}
 		}

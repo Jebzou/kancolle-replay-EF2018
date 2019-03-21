@@ -27881,7 +27881,7 @@ var MAPDATA = {
 						type: 3,
 						x: 706,
 						y: 112,
-						route: 'Q'
+						route: 'A'
 					},
 					'A': {
 						type: 3,

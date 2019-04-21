@@ -70,7 +70,7 @@ SoundManager.prototype = {
 		this._bgm.fade(this._bgm.volume(),0,dur);
 		this.BGMnum = 0;
 	},
-	playVoice: function(shipid,type,slot) {
+	playVoice: function(shipid,type,slot,callback) {
 		if (!this._voiceON) return;
 		if (!VOICES[shipid]) return;
 		if (slot >= 10 && isPlayable(shipid)) return; //no PVP enemy voices
@@ -88,7 +88,12 @@ SoundManager.prototype = {
 			this._sounds['V'+type+shipid] = new Howl({
 				src:[path],
 				volume:.4*this._volume,
-				html5:true
+				html5:true,
+				onstop: function(){
+					if(callback) {
+						callback();
+					}
+				}
 			});
 		}
 		if (this._voices[slot] && isPlayable(shipid)) {

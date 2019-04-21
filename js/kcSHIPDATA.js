@@ -8945,6 +8945,7 @@ var SHIPDATA = {
 		ammo: 50,
 		next: 0,
 		prev: 491,
+		canTorp: function() { return false; },
 	},
 	373: {
 		name: 'Fujinami Kai',
@@ -11793,6 +11794,7 @@ var SHIPDATA = {
 		next: 372,
 		prev: 0,
 		nextlvl: 40,
+		canTorp: function() { return false; },
 	},
 	492: {
 		name: 'Richelieu',

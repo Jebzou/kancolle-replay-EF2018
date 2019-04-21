@@ -67,7 +67,6 @@ function chMenuShowFiles() {
 		var num = nums[k].num;
 		var data = nums[k].data;
 		var mdata = MAPDATA[data.event.world];
-		if (mdata === undefined) continue;
 		var tr = $('#chfile'+num);
 		if (tr.length <= 0) {
 			tr = $('<tr id="chfile'+num+'" class="chfile" onclick="chMenuLoadFile('+num+')"></tr>');
@@ -179,6 +178,13 @@ function chMenuSelectedEvent(eventnum) {
 	chMenuDefaultSettings();
 	$('#menuevents').hide();
 	$('#menuloadfile').show();
+	if (localStorage.ch_import == 1) {
+		$('#menuImportKC3').hide();
+		$('#menuImportOther').show();
+	} else {
+		$('#menuImportKC3').show();
+		$('#menuImportOther').hide();
+	}
 	$('#menusettings').hide();
 	$(".ui-dialog-titlebar").hide();
 }
@@ -440,3 +446,47 @@ function chGetStorageLeft() {
 	delete localStorage['a'];
 	return 2*left;
 }
+
+
+$('#btnImportOther').click(function() {
+	$('#menuImportKC3').hide();
+	$('#menuImportOther').show();
+	localStorage.ch_import = 1;
+});
+$('#btnImportKC3').click(function() {
+	$('#menuImportKC3').show();
+	$('#menuImportOther').hide();
+	delete localStorage.ch_import;
+});
+$('#btnImportOtherSubmit').click(function() {
+	$('#spanImportOtherError').text('');
+	let dataShip, dataEquip;
+	try {
+		dataShip = JSON.parse($('#inpImportOtherShip').val());
+	} catch(e) {
+		$('#spanImportOtherError').text('Ship: Bad JSON');
+		return;
+	}
+	try {
+		dataEquip = JSON.parse($('#inpImportOtherEquip').val());
+	} catch(e) {
+		$('#spanImportOtherError').text('Equipment: Bad JSON');
+		return;
+	}
+	let name = $('#inpImportOtherName').val(), level = +$('#inpImportOtherHQ').val();
+	if (!name) {
+		$('#spanImportOtherError').text('Name required');
+		return;
+	}
+	if (!level || level < 1 || level > 120) {
+		$('#spanImportOtherError').text('HQ Level required');
+		return;
+	}
+	try {
+		chProcessImportOther(dataShip,dataEquip,name,level);
+	} catch(e) {
+		console.log(e);
+		$('#spanImportOtherError').text('Bad data');
+		return;
+	}
+});
